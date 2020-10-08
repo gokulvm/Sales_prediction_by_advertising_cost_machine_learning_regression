@@ -34,9 +34,9 @@ def main():
     </div>
     """
     st.markdown(html_temp,unsafe_allow_html=True)
-    tv = st.number_input('TV Advertisement Cost ', value=1.)
-    radio = st.number_input('Radio Advertisement Cost ', value=1.)
-    news = st.number_input('News Paper Advertisement Cost ', value=1.)
+    tv = st.number_input('TV Advertisement Cost(in dollars) ', value=1.)
+    radio = st.number_input('Radio Advertisement Cost(in dollars) ', value=1.)
+    news = st.number_input('News Paper Advertisement Cost(in dollars) ', value=1.)
     result=""
     if st.button("Predict"):
         result=predict_message(tv,radio,news)
