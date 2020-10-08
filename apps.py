@@ -30,7 +30,7 @@ def main():
     st.text("Machine Learning App Built with Streamlit")
     html_temp = """
     <div style="background-color:tomato;padding:10px">
-    <h2 style="color:white;text-align:center;">Stock Sentiment Analysis using News Headlines</h2>
+    <h2 style="color:white;text-align:center;">Sales Prediction by Advertising Cost</h2>
     </div>
     """
     st.markdown(html_temp,unsafe_allow_html=True)
@@ -47,7 +47,7 @@ def main():
         st.text("This model can predict sales by advertising cost")
         st.text("Used Algorithm : Random Forest Regressor ")
         st.text("Accuracy : 97%")
-        link = '[Code](https://github.com/gokulvm/NLP_deep_learning_stock_sentiment_analysis)'
+        link = '[Code](https://github.com/gokulvm/Sales_prediction_by_advertising_cost_machine_learning_regression)'
         st.markdown(link, unsafe_allow_html=True)
        
 if __name__=='__main__':
