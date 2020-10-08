@@ -17,7 +17,7 @@ transformer=pickle.load(open('rb.pkl', 'rb'))
 
 def predict_message(tv,radio,news):
 
-    values = transformer.transform([[270.1,37.2,69.2]])[:,:-1]
+    values = transformer.transform([[tv,radio,news]])[:,:-1]
     prediction = model.predict(values)
     ans = prediction[0]
     ans = str(round(prediction[0],2)) +" " + "Dollars"
